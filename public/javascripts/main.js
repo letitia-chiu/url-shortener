@@ -9,8 +9,7 @@ async function copyUrl() {
 
   try {
     await navigator.clipboard.writeText(copyText.value)
-    console.log('click')
-    console.log(copyText.value)
+
     // Alert the copied text
     alert("Copied the URL: " + copyText.value)
   } catch (err) {
