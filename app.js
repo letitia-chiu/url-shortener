@@ -14,11 +14,17 @@ app.get('/', (req, res) => {
   res.render('index')
 })
 
+// Redirection of shortened urls
 app.get('/:id', (req, res) => {
   const id = req.params.id
-  if (id === urls[0].id) {
-    res.redirect(urls[0].orig)
+  const url = urls.find((data) => data.id === id)
+  
+  // 如果找不到對應id則導回首頁
+  if (!url) {
+    res.redirect('/')
   }
+
+  res.redirect(url.orig)
 })
 
 
