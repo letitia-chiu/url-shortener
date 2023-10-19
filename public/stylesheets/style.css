@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+header,
+body {
+  margin: 0;
+  padding: 0;
+  color: #594c53;
+  background-color: #f2dcc9;
+}
+
+.container {
+  max-width: 60vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  letter-spacing: 2px;
+}
+
+.top-img {
+  margin-bottom: 50px;
+  width: 300px;
+}
+
+.input-container {
+  position: relative;
+  display: flex;
+  height: 2.8rem;
+  width: 100%;
+  min-width: 300px;
+  max-width: 500px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, .05);
+}
+
+.input-container input {
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid rgb(176 190 197);
+  background-color: transparent;
+  padding: 0.625rem 70px 0.625rem 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  color: rgb(69 90 100);
+  outline: none;
+  transition: all .15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-container input:focus {
+  border: 1px solid rgb(236 72 153);
+}
+
+.shorten-btn {
+  position: absolute;
+  width: 65px;
+  right: 8px;
+  top: 8px;
+  bottom: 8px;
+  z-index: 10;
+  border-radius: 4px;
+  background-color: rgb(236 72 153);
+  color: #fff;
+  padding: 0.25em text-align: center;
+  vertical-align: middle;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+  transition: .6s ease;
+}
+
+.shorten-btn:hover {
+  right: 2px;
+  top: 2px;
+  width: 77px;
+  bottom: 2px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.input-container input:placeholder-shown~.shorten-btn {
+  pointer-events: none;
+  background-color: gray;
+  opacity: 0.5;
+}
+
+.result {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  align-items: center;
+  min-width: 300px;
+}
+
+h3 {
+  margin: auto 20px auto 0;
+}
+
+.instruction {
+  margin-top: 20px;
+}
+
+.copy-area {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shortened-url {
+  border: 2px solid transparent;
+  width: 15em;
+  height: 2.5em;
+  padding-left: 0.8em;
+  outline: none;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  font-size: 1em;
+  color: palevioletred;
+  transition: all 0.5s;
+}
+
+.shortened-url:hover,
+.shortened-url:focus {
+  border: 2px solid palevioletred;
+  background-color: white;
+}
+
+.copy-btn {
+  border: 1px solid transparent;
+  margin-left: 8px;
+  width: 2.5em;
+  height: 2.5em;
+  padding: auto 0.8em;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 10px;
+  color: #594c53;
+  font-size: 1em;
+  transition: all 0.5s;
+}
+
+.copy-btn:hover {
+  background-color: palevioletred;
+  color: whitesmoke;
+  cursor: pointer;
+}
