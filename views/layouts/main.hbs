@@ -10,14 +10,16 @@
 
 <header>
   <div class="container">
-    <h1>URL SHORTENER</h1>
+    <h1><a href="/" class="title">URL SHORTENER</a></h1>
     <img src="image/top_img.png" alt=""
       class="top-img">
 
-    <div class="input-container">
-      <input required="" type="url" class="input-url" placeholder="Input your URL">
-      <button class="shorten-btn">Shorten</button>
-    </div>
+    
+    <form action="/shorten" class="input-container">
+      <input required="" name="url" type="url" class="input-url" placeholder="Input your URL">
+      <button type="submit" class="shorten-btn">Shorten</button>
+    </form>      
+    
 
   </div>
 </header>

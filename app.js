@@ -14,6 +14,14 @@ app.get('/', (req, res) => {
   res.render('index')
 })
 
+app.get('/shorten', (req,res) => {
+  const inputUrl = req.query.url
+  if (inputUrl && inputUrl.length > 0) {
+    res.render('short', {inputUrl})
+  }
+})
+
+
 // Redirection of shortened urls
 app.get('/:id', (req, res) => {
   const id = req.params.id

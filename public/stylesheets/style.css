@@ -25,6 +25,11 @@ h1 {
   letter-spacing: 2px;
 }
 
+.title {
+  color: #594c53;
+  text-decoration: none;
+}
+
 .top-img {
   margin-bottom: 50px;
   width: 300px;
