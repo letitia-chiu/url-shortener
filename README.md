@@ -13,6 +13,7 @@
 - 將短網址導向原址。
 - 短網址之 id 無效時，導回短網址生成器首頁 `http://localhost:3000`
 - 複製按鈕可一鍵複製轉換後的短網址。
+- 點擊標題「URL SHORTENER」可返回首頁。
 
 ## 執行環境 (RTE)
 [Node.js](https://nodejs.org/) (v18.18.0)  
